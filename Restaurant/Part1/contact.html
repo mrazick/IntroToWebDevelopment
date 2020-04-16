@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+</head>
+
+<body>
+    <header>
+        <h1 style="text-align: center">House of Pies</h1>
+    </header>
+    <nav>
+        <hr />
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="contact.html">Contact Us</a>
+        <hr />
+    </nav>
+    <section style="text-align: center">
+        <form>
+            <table style="text-align: right">
+                <tr>
+                    <td>
+                        Name:
+                    </td>
+                    <td>
+                        <input type="text" name="name" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Email:
+                    </td>
+                    <td>
+                        <input type="text" name="email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Phone:
+                    </td>
+                    <td>
+                        <input type="text" name="phone" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Reason for Inquiry:
+                    </td>
+                    <td>
+                        <select name="reason" style="width: 100%">
+                            <option value="catering">Catering</option>
+                            <option value="privateparty">Private Party</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Additional Information:
+                    </td>
+                    <td>
+                        <textarea name="addinfo"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Have you been to the restaurant?
+                    </td>
+                    <td>
+                        <input type="radio" name="beenrestaurant" value="no" checked />No
+                        <input type="radio" name="beenrestaurant" value="yes" />Yes
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Best days to contact you:
+                    </td>
+                    <td>
+                        <input type="checkbox" name="contactday" value="mon" />M
+                        <input type="checkbox" name="contactday" value="tues" />T
+                        <input type="checkbox" name="contactday" value="wed" />W
+                        <input type="checkbox" name="contactday" value="thurs" />Th
+                        <input type="checkbox" name="contactday" value="fri" />F
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" value="Send Request" /><br />
+        </form>
+    </section>
+    <footer>
+        <hr />
+        <p style="text-align: center">1122 Boogie Woogie Ave, Anytown, NY, 90210</p>
+        <p style="text-align: center">516-867-5309</p>
+    </footer>
+</body>
+
+</html>
