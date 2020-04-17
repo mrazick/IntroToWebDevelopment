@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>House of Pies - Contact Us</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/restaurantStyles.css" />
+
+    <style>
+        label {
+            font-weight: bold;
+        }
+    </style>
+    <script type="text/JavaScript" src="js/contactForm.js"></script>
+</head>
+
+<body>
+    <header>
+        <div id="restaurantName">
+            <h1>House of Pies</h1>
+        </div>
+        <div class="jumbotron" style="padding-top: 10px;padding-bottom: 10px;">
+            <h4>We are thrilled to announce our grand opening in Grand Rapids, Michigan!</h4>
+            <h6 class="text-right mt-5">1313 Mockingbird Lane, Grand Rapids, MI</h6>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <h6>We're Opening a new location!</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <h6>We're rolling out our seasonal menu, with special options for this season.</h6>
+                    </div>
+                    <div class="carousel-item">
+                        <h6>The Drink of the Month is SG Special Brew.</h6>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <noscript>
+            <h1 style="color: red">Please enable JavaScript to use this page!</h1>
+        </noscript>
+    </header>
+    <nav>
+        <hr />
+        <a class="btn badge-pill" href="index.html"><i class="fas fa-home"></i></a>
+        <a class="btn badge-pill" href="menu.html">Menu</a>
+        <a class="btn badge-pill" href="contact.html">Contact Us</a>
+        <hr />
+    </nav>
+    <section style="text-align: center">
+        <form name="contactForm" onsubmit="return validateForm();">
+            <div class="form-group row">
+                <label class="col-sm-5" for="contactName">Name:</label>
+                <div class="col-sm-5">
+                    <input type="text" class="form-control" id="contactName" placeholder="John Doe">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5" for="contactEmail">Email:</label>
+                <div class="col-sm-5">
+                    <input type="email" class="form-control" id="contactEmail" placeholder="name@example.com">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5" for="contactTel">Phone:</label>
+                <div class="col-sm-5">
+                    <input type="tel" class="form-control" id="contactTel" placeholder="1-(555)-555-5555">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5" for="contactReason">Reason for Inquiry</label>
+                <div class="col-sm-5">
+                    <select class="form-control" id="contactReason">
+                        <option>Catering</option>
+                        <option>Private Party</option>
+                        <option>Feedback</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5" for="addlInfo">Additional Information</label>
+                <div class="col-sm-5">
+                    <textarea class="form-control" id="addlInfo" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5">Have you been to the restaurant?</label>
+                <div class="col-sm-5">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="hasVisited" id="hasVisitedNo"
+                                value="No" checked>
+                            No
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="radio" name="hasVisited" id="hasVisitedYes"
+                                value="Yes">
+                            Yes </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label class="col-sm-5">Best days to contact you:</label>
+                <div class="col-sm-5">
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="contactDays" id="contactMonday" value="M">M
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="contactDays" id="contactTuesday" value="T">T
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="contactDays" id="contactWednesday" value="W">W
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="contactDays" id="contactThursday" value="Th">Th
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="contactDays" id="contactFriday" value="F">F
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="offset-sm-2 col-sm-10">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <hr />
+        <p>1122 Boogie Woogie Ave, Anytown, NY, 90210</p>
+        <p>516-867-5309</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- <form>
+    <table style="text-align: right">
+        <tr>
+            <td class="label">
+                Name:
+            </td>
+            <td>
+                <input type="text" name="name" />
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                Email:
+            </td>
+            <td>
+                <input type="text" name="email" />
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                Phone:
+            </td>
+            <td>
+                <input type="text" name="phone" />
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                Reason for Inquiry:
+            </td>
+            <td>
+                <select name="reason" style="width: 100%">
+                    <option value="catering">Catering</option>
+                    <option value="privateparty">Private Party</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                Additional Information:
+            </td>
+            <td>
+                <textarea name="addinfo"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                Have you been to the restaurant?
+            </td>
+            <td>
+                <input type="radio" name="beenrestaurant" value="no" checked />No
+                <input type="radio" name="beenrestaurant" value="yes" />Yes
+            </td>
+        </tr>
+        <tr>
+            <td class="label">
+                Best days to contact you:
+            </td>
+            <td>
+                <input type="checkbox" name="contactday" value="mon" />M
+                <input type="checkbox" name="contactday" value="tues" />T
+                <input type="checkbox" name="contactday" value="wed" />W
+                <input type="checkbox" name="contactday" value="thurs" />Th
+                <input type="checkbox" name="contactday" value="fri" />F
+            </td>
+        </tr>
+    </table>
+    <input type="submit" value="Send Request" /><br />
+</form> -->
