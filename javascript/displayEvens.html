@@ -16,20 +16,16 @@
 <body>
     <div class="container">
         <h1>Display Evens</h1>
-        <form name="evensForm" onsubmit="displayEvens();" class="form-inline">
+        <form name="evensForm" onsubmit="return displayEvens();" class="form-inline">
                 <div class="form-group">
                     <label for="numStart">Starting Number</label>
-                    <input type="number" class="form-control" id="numStart">
-                </div>
-                <div class="form-group">
+                    <input type="number" class="form-control" id="numStart"><br>
                     <label for="numEnd">Ending Number</label>
-                    <input type="number" class="form-control" id="numEnd">
-                </div>    
-                <div class="form-group">
+                    <input type="number" class="form-control" id="numEnd"><br>
                     <label for="numStep">Step</label>
-                    <input type="number" class="form-control" id="numStep">
+                    <input type="number" class="form-control" id="numStep"><br>
+                    <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
                 </div>           
-                <button type="submit" id="submitButton" class="btn btn-default">Display Evens</button>
                 <!-- <button type="reset" id="resetButton" class="btn">Reset</button> -->
         </form>
 
